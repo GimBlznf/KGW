@@ -7,11 +7,11 @@ object Add{
     var k:Float=4.3f;
     var g:Float=4.0f
     
-    println( (b+1) * a + c *(d-1));
-    println(a+1);
-    println (-2 * ( g - k ) +c);
-    println (c==(c+1));
-    println (c==(c+1)*(a+1));
+    println( (b-1) * a + c *(d)); //24
+    println(a+1);                 //3
+    println (-2 * ( g - k ) +c);  //4.6000004
+    println (c==c);               //true
+    println ((c+1)==(c+2)*(a+1)); //false
 
     
   }
