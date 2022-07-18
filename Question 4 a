@@ -1,14 +1,13 @@
-object Add{
-  def main (args: Array[String]):Unit={
-    var Normal:Float=250.00;
-    var OT:Float=85.00;
-    var NormalHours:Int=40;
-    var OTHours:Int=30;
-    var tax:Float=0.12;
-    var typicalSalary:Float=((Normal*NormalHours)+(OT*OTHours))*(1-tax);
+object q4a extends App{
+  def NormalSalary (x: Int):Double={
+    return 250.00*x-(250.00*x*0.12);
+  }
+  
+  def OTSalary (x: Int):Double={
+    return 85.00*x-(85.00*x*0.12);
+  }
     
-    println("Typical Salary of an emplyee : "+typicalSalary);
+    println("Typical Salary of an emplyee : "+(NormalSalary(40)+OTSalary(30)));
     
   }
 
-}
