@@ -1,0 +1,24 @@
+import scala.io.StdIn.readInt;
+
+object q4b extends App{
+  def attendanceDifference(price:Int):Int={
+    if(price>15){
+      return ((price-15)%5)*(-20);
+    }else if(price<15){
+      return ((15-price)%5)*20;
+    }else{
+      return 0;
+    }
+  }
+  
+  def profit(price:Int, attendance:Int): Int=return price*attendance;
+  
+  def netProfit(price:Int, attendance:Int): Double={
+    return(profit(price,attendance+attendanceDifference(price))-(500+3*attendance+attendanceDifference(price)));
+  }
+    
+  print("Enter ticket price : ");
+  var ticketPrice = readInt();
+  println("Profit : "+ netProfit(ticketPrice, 120));
+  }
+
