@@ -8,7 +8,6 @@ object Add{
     var typicalSalary:Float=((Normal*NormalHours)+(OT*OTHours))*(1-tax);
     
     println("Typical Salary of an emplyee : "+typicalSalary);
-
     
   }
 
