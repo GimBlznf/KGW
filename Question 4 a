@@ -1,0 +1,15 @@
+object Add{
+  def main (args: Array[String]):Unit={
+    var Normal:Float=250.00;
+    var OT:Float=85.00;
+    var NormalHours:Int=40;
+    var OTHours:Int=30;
+    var tax:Float=0.12;
+    var typicalSalary:Float=((Normal*NormalHours)+(OT*OTHours))*(1-tax);
+    
+    println("Typical Salary of an emplyee : "+typicalSalary);
+
+    
+  }
+
+}
